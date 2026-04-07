@@ -1,0 +1,17 @@
+Option 1: Install Node.js + pnpm (Recommended)
+Step 1 — Install Node.js (this also installs npm): 👉 Download from nodejs.org/en/download — choose the LTS Windows Installer (.msi)
+
+Step 2 — Install pnpm (after Node is installed, run this in PowerShell):
+
+powershell
+npm install -g pnpm
+Step 3 — Install project dependencies:
+
+powershell
+cd r:\Campus-Chow-main
+pnpm install
+Step 4 — Run the Campus Dine app:
+
+powershell
+$env:PORT="3000"; $env:BASE_PATH="/"; pnpm --filter @workspace/campus-dine run dev
+Then open http://localhost:3000 in your browser.
